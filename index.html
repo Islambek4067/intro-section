@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      .show {
+        display: flex !important;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-200">
+    <header class="relative">
+      <nav class="flex items-center justify-between p-5">
+        <div class="flex items-center gap-10 justify-between">
+          <img src="images/logo.svg" alt="" />
+          <div class="p-feature hidden md:flex items-center gap-2">
+            <p>Features</p>
+            <img src="images/icon-arrow-down.svg" alt="" />
+          </div>
+          <div class="p-company hidden md:flex items-center gap-2">
+            <p>Company</p>
+            <img src="images/icon-arrow-down.svg" alt="" />
+          </div>
+          <p class="hidden md:block">Careers</p>
+          <p class="hidden md:block">About</p>
+        </div>
+        <div class="hidden md:flex items-center gap-4">
+          Login
+          <button class="border-2 rounded-xl py-1 px-4 border-gray-400">
+            Register
+          </button>
+        </div>
+        <img class="menu-mb md:hidden" src="images/icon-menu.svg" alt="" />
+      </nav>
+      <div
+        class="flex md:flex-row flex-col-reverse items-center gap-10 px-3 md:px-[100px] mt-24"
+      >
+        <div
+          class="flex-1 items-center md:items-start flex flex-col justify-between h-[500px]"
+        >
+          <div
+            class="flex items-center md:items-start text-center md:text-start flex-col gap-10"
+          >
+            <h1 class="font-bold text-[80px] leading-20">Make remote work</h1>
+            <p class="text-[18px] text-gray-500">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="w-[150px] text-white rounded-xl bg-black px-5 py-2">
+              Learn more
+            </button>
+          </div>
+          <div class="flex items-center gap-5 md:w-auto mt-5">
+            <img
+              class="w-16 md:w-auto"
+              src="images/client-databiz.svg"
+              alt=""
+            />
+            <img
+              class="w-16 md:w-auto"
+              src="images/client-audiophile.svg"
+              alt=""
+            />
+            <img class="w-16 md:w-auto" src="images/client-meet.svg" alt="" />
+            <img class="w-16 md:w-auto" src="images/client-maker.svg" alt="" />
+          </div>
+        </div>
+        <img
+          class="flex-1 md:w-[300px] md:h-[600px]"
+          src="images/image-hero-desktop.png"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="features top-[70px] left-[80px] absolute hidden flex-col gap-2 w-fit p-5 rounded-xl bg-white"
+      >
+        <div class="flex items-center gap-4">
+          <img class="w-5" src="images/icon-planning.svg" alt="" />
+          Todo list
+        </div>
+        <div class="flex items-center gap-4">
+          <img class="w-5" src="images/icon-calendar.svg" alt="" />
+          Calendar
+        </div>
+        <div class="flex items-center gap-4">
+          <img class="w-5" src="images/icon-reminders.svg" alt="" />
+          Reminders
+        </div>
+        <div class="flex items-center gap-4">
+          <img class="w-5" src="images/icon-planning.svg" alt="" />
+          Planning
+        </div>
+      </div>
+      <ul
+        class="company hidden flex-col gap-2 bg-white p-5 rounded-xl w-fit absolute top-[70px] left-[260px]"
+      >
+        <li>History</li>
+        <li>Our team</li>
+        <li>Blog</li>
+      </ul>
+    </header>
+
+    <div class="mb-box hidden flex-col gap-10 md:hidden p-5 bg-white absolute top-0 right-0 h-screen w-3/4">
+      <img class="w-5 self-end exit" src="images/icon-close-menu.svg" alt="">
+      <div>
+      <div class="p-feature-mb flex items-center gap-2">
+        <p>Features</p>
+        <img src="images/icon-arrow-down.svg" alt="" />
+      </div>
+      <div
+        class="feature-mb-el hidden flex-col gap-2 w-fit p-5 rounded-xl "
+      >
+        <div class="flex items-center gap-4">
+          <img class="w-5" src="images/icon-planning.svg" alt="" />
+          Todo list
+        </div>
+        <div class="flex items-center gap-4">
+          <img class="w-5" src="images/icon-calendar.svg" alt="" />
+          Calendar
+        </div>
+        <div class="flex items-center gap-4">
+          <img class="w-5" src="images/icon-reminders.svg" alt="" />
+          Reminders
+        </div>
+        <div class="flex items-center gap-4">
+          <img class="w-5" src="images/icon-planning.svg" alt="" />
+          Planning
+        </div>
+      </div>
+      <div class="p-company-mb flex items-center gap-2">
+        <p>Company</p>
+        <img src="images/icon-arrow-down.svg" alt="" />
+      </div>
+      <ul
+        class="hidden company-mb-el md:hidden flex-col gap-2 p-5 w-fit "
+      >
+        <li>History</li>
+        <li>Our team</li>
+        <li>Blog</li>
+      </ul>
+      <p class="">Careers</p>
+      <p class="">About</p>
+
+      </div>
+      <div class="flex flex-col items-center gap-3">
+        Login
+        <button class="border-2 rounded-xl py-1 px-4 border-gray-400">
+            Register
+          </button>
+      </div>
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
