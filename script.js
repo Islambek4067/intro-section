@@ -6,7 +6,7 @@ const exit = document.querySelector('.exit')
 const companyEl = document.querySelector('.company-mb-el')
 const companyMb = document.querySelector('.p-company-mb')
 const featureMb = document.querySelector('.p-feature-mb')
-const featuresEl = document.querySelector('.features-mb-el')
+const featureEl = document.querySelector('.feature-mb-el')
 
 const menuMb = document.querySelector('.menu-mb')
 const mbBox = document.querySelector('.mb-box')
@@ -30,7 +30,7 @@ companyMb.addEventListener('click', ()=>{
 })
 
 featureMb.addEventListener('click', ()=>{
-  featuresEl.classList.toggle('show')
+  featureEl.classList.toggle('show')
 })
 
 
